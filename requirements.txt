@@ -1,0 +1,8 @@
+flask
+flask-login
+Flask-SQLAlchemy
+Flask-Migrate
+flask-restful
+SQLAlchemy
+mysqlclient
+pymysql

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Edit Post
+</h1>
+
+<div class="column is-4 is-offset-4">
+  <div class="box">
+      <form method="post" action="">
+          <div class="field">
+              <div class="control">
+                <input class="form-control" name="inputTitle" type="text" placeholder="Titel" value="{{ post.inputTitle }}">
+              </div>
+          </div>
+
+          <div class="field">
+              <div class="control">
+                <textarea class="form-control" name="inputPost" placeholder="Text">{{ post.inputPost }}</textarea>
+              </div>
+          </div>
+         
+          <button class="button is-block is-info is-large is-fullwidth">Update</button>
+      </form>
+  </div>
+</div>
+{% endblock content %}
